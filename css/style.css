@@ -97,7 +97,7 @@ a {
 }
 
 .intro_img {
-    background: url(/img/intro.png) center no-repeat;
+    background: url(../img/intro.png) center no-repeat;
     width: 937px;
     height: auto;
     background-size: contain;
@@ -253,19 +253,19 @@ a {
 
 /* Задаем изображения для элементов списка цветов */
 .silver_img::before {
-    background-image: url(/img/silver.png);
+    background-image: url(../img/silver.png);
 }
 
 .purple_img::before {
-    background-image: url(/img/purple.png);
+    background-image: url(../img/purple.png);
 }
 
 .gold_img::before {
-    background-image: url(/img/gold.png);
+    background-image: url(../img/gold.png);
 }
 
 .black_img::before {
-    background-image: url(/img/black.png);
+    background-image: url(../img/black.png);
 }
 
 .img_title,
@@ -378,7 +378,7 @@ a {
 }
 
 .form_img {
-    background-image: url(/img/form_img.jpeg);
+    background-image: url(../img/form_img.jpeg);
     width: 100%;
     height: 600px;
     background-size: cover;
