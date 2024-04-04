@@ -1,0 +1,346 @@
+/* Медиа-запрос для экранов с максимальной шириной 1300px */
+@media screen and (max-width: 1300px) {
+    /* Изменение стилей для контейнера формы */
+    .form_content {
+        grid-template-columns: 500px 500px;
+        grid-template-rows: 490px auto;
+    }
+
+    /* Изменение стилей для формы */
+    .form {
+        max-width: 100%;
+        max-height: 440px;
+        padding: 30px 30px;
+    }
+}
+
+/* Медиа-запрос для экранов с максимальной шириной 1060px */
+@media screen and (max-width: 1060px) {
+    /* Изменение стилей для блока с текстом и изображением */
+    .text_box_img {
+        grid-template-rows: 515px auto;
+        justify-content: space-between;
+        gap: 0;
+    }
+}
+
+/* Медиа-запрос для экранов с максимальной шириной 1024px */
+@media screen and (max-width: 1024px) {
+    /* Изменение стилей для списка цветов */
+    .color_list {
+        grid-template-columns: 245px 245px;
+        row-gap: 90px;
+        justify-content: space-around;
+    }
+
+    /* Изменение стилей для контейнера формы */
+    .form_content {
+        grid-template-columns: 372px 399px;
+    }
+
+    /* Изменение стилей для формы */
+    .form {
+        max-height: 378px;
+        padding: 57px 29px;
+    }
+
+    /* Изменение стилей для заголовка формы */
+    .form_title {
+        font-size: 24px;
+    }
+}
+
+/* Медиа-запрос для экранов с максимальной шириной 960px */
+@media screen and (max-width: 960px) {
+    /* Изменение стилей для навигационной панели */
+    .navbar {
+        grid-template-columns: 355px 40px 236px;
+    }
+
+    /* Изменение ширины изображения вводного раздела */
+    .intro_img {
+        width: 700px;
+    }
+
+    /* Изменение стилей для блока с текстом и изображением */
+    .text_box_img {
+        grid-template-columns: 477px 252px;
+    }
+}
+
+/* Медиа-запрос для экранов с максимальной шириной 768px */
+@media screen and (max-width: 768px) {
+    /* Изменение стилей для навигационной панели */
+    .navbar {
+        grid-template-columns: 1fr 44px 44px;
+        gap: 15px;
+    }
+
+    /* Показывать меню на мобильных устройствах */
+    .menu {
+        display: block;
+        position: absolute;
+        top: 112px;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        background-color: #0a0a0ade;
+        transition: 0.5s ease-in;
+    }
+
+    /* Изменение стилей для пунктов меню */
+    .menu_item {
+        grid-template-columns: none;
+        grid-template-rows: 30px 30px 30px;
+        justify-items: center;
+        gap: 100px;
+        padding: 65px;
+    }
+
+    /* Изменение размера шрифта для пунктов меню */
+    .link_item {
+        font-size: 30px;
+    }
+
+    /* Изменение положения логотипа в шапке */
+    .logo_header {
+        position: relative;
+    }
+
+    /* Изменение положения ссылки в шапке */
+    .link_header {
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Изменение размеров изображения вводного раздела */
+    .intro_content {
+        grid-template-rows: 15px 445px 93px;
+    }
+
+    /* Изменение размера заголовка вводного раздела */
+    .intro_title {
+        font-size: 50px;
+    }
+
+    /* Изменение ширины изображения вводного раздела */
+    .intro_img {
+        width: 100%;
+    }
+
+    /* Скрытие номера телефона */
+    .number {
+        display: none;
+    }
+
+    /* Стили для иконок телефона и бургер-меню */
+    .tel_icon,
+    .burger_icon {
+        display: block;
+        position: relative;
+        width: 44px;
+        height: 44px;
+        border: 1px solid #717171;
+        border-radius: 10px;
+    }
+
+    /* Положение бургер-меню */
+    .burger_box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Стили для линий бургер-меню */
+    .burger_line {
+        width: 32px;
+        height: 2px;
+        background-color: #717171;
+        display: block;
+        margin-bottom: 4px;
+        position: relative;
+        transition: 0.3s ease-in;
+    }
+
+    /* Анимация бургер-меню при активации */
+    .burger_menu:checked ~ .burger_line {
+        margin-bottom: 0;
+    }
+
+    /* Скрытие одной из линий бургер-меню */
+    .burger_menu:checked ~ .burger_icon > .burger_box > .line_2 {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+    }
+
+    /* Анимация первой линии бургер-меню при активации */
+    .burger_menu:checked ~ .burger_icon > .burger_box > .line_1 {
+        transform: rotate(40deg);
+        top: 1px;
+        margin-bottom: 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    /* Анимация третьей линии бургер-меню при активации */
+    .burger_menu:checked ~ .burger_icon > .burger_box > .line_3 {
+        transform: rotate(135deg);
+        margin-bottom: 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    /* Положение иконки телефона */
+    .icon_link {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Заполнение иконки телефона цветом */
+    .tel_svg path {
+        fill: #717171;
+    }
+
+    /* Анимация появления меню при активации бургер-меню */
+    .burger_menu:checked ~ .menu {
+        height: 1000px;
+        visibility: visible;
+        opacity: 1;
+        z-index: 1;
+        transition: 0.5s ease-in;
+    }
+
+    /* Изменение расположения блока с текстом и изображением */
+    .text_box_img {
+        grid-template-columns: 325px 252px;
+        grid-template-rows: 590px;
+    }
+
+    /* Изменение размера шрифта для текста в блоке */
+    .b_text {
+        font-size: 14px;
+    }
+
+    /* Изменение стилей для контейнера формы */
+    .form_content {
+        grid-template-columns: 100%;
+        grid-template-rows: none;
+    }
+
+    /* Изменение размера фона формы */
+    .form_img {
+        background-size: cover;
+        height: 300px;
+        order: 1;
+    }
+
+    /* Изменение порядка расположения формы */
+    .form {
+        order: 2;
+    }
+
+    /* Изменение размера шрифта для текста в форме */
+    .p_form {
+        font-size: 12px;
+    }
+
+    /* Изменение стилей для контейнера подвала */
+    .footer_content {
+        display: grid;
+        grid-template-columns: 239px;
+        justify-content: center;
+        justify-items: center;
+        padding: 20px 0;
+    }
+
+    /* Изменение размера шрифта для текста в подвале */
+    .p_footer {
+        font-size: 10px;
+        padding: 0;
+        order: 3;
+    }
+
+    /* Изменение размера шрифта для номера телефона в подвале */
+    .number_footer {
+        display: block;
+        font-size: 18px;
+        order: 3;
+    }
+
+    /* Изменение отступа в контейнере формы */
+    .form_container {
+        padding: 0;
+    }
+
+    /* Изменение положения формы */
+    #id_form {
+        top: 118px;
+    }
+}
+
+/* Медиа-запрос для экранов с максимальной шириной 600px */
+@media screen and (max-width: 600px) {
+    /* Изменение стилей для блока с текстом и изображением */
+    .text_box_img {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    /* Скрытие изображения в новом блоке */
+    .new_img {
+        display: none;
+    }
+
+    /* Изменение размера шрифта для заголовка цветов */
+    .color_title {
+        font-size: 20px;
+    }
+
+    /* Изменение расположения списка цветов */
+    .color_list {
+        grid-template-columns: 245px;
+        justify-content: center;
+    }
+}
+
+/* Медиа-запрос для экранов с максимальной шириной 480px */
+@media screen and (max-width: 480px) {
+    /* Изменение стилей для блока с содержимым вводного раздела */
+    .intro_content {
+        grid-template-rows: 0px 294px 108px;
+    }
+
+    /* Изменение размера шрифта для заголовка вводного раздела */
+    .intro_title {
+        font-size: 30px;
+    }
+
+    /* Изменение размера кнопки вводного раздела */
+    .intro_button {
+        padding: 22px 54px 19px 54px;
+    }
+
+    /* Изменение размера шрифта для заголовка формы */
+    .form_title {
+        font-size: 20px;
+    }
+
+    /* Изменение выравнивания текста в форме */
+    .p_form {
+        text-align: center;
+    }
+
+    /* Изменение положения ссылки в шапке */
+    .link_header {
+        position: static;
+        padding-left: 20px;
+    }
+}

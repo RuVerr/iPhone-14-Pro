@@ -1,0 +1,405 @@
+/* Общие стили */
+body {
+    box-sizing: border-box;
+    font-family: 'inter';
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Выравнивание по центру */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+/* Стили для шапки */
+.header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    height: 113px;
+    background-color: #0A0A0A;
+    z-index: 5;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 355px 40px 236px;
+    justify-content: space-between;
+    align-items: center;
+    height: 113px;
+}
+
+.menu_item {
+    display: grid;
+    grid-template-columns: 132px 56px 102px;
+    gap: 31px;
+    padding: 0;
+}
+
+.logo_header {
+    position: relative;
+}
+
+.link_header {
+    position: absolute;
+    top: 50%;
+    left: -95%;
+    transform: translate(-50%, -50%);
+}
+
+.number {
+    display: grid;
+    justify-items: end;
+}
+
+.link_item,
+.number {
+    color: #717171;
+    font-family: 'inter';
+    font-size: 24px; 
+    font-weight: 400; 
+    line-height: 29px; 
+    text-align: left;
+}
+
+/* Стили для раздела "Intro" */
+
+.intro {
+    background-color: #F5F5F7; /* Цвет фона */
+}
+
+.intro_content {
+    display: grid;
+    grid-template-rows: 77px 744px 109px;
+    justify-content: center;
+    padding-top: 140px;
+}
+
+.intro_title {
+    color: #490E84;
+    font-size: 64px; 
+    line-height: 77px;
+    text-align: center;
+}
+
+.intro_img {
+    background: url(/img/intro.png) center no-repeat;
+    width: 937px;
+    height: auto;
+    background-size: contain;
+    margin-top: 83px;
+}
+
+.button_box {
+    display: grid;
+    justify-content: center;
+}
+
+.intro_button {
+    padding: 22px 117px 19px 118px;
+    margin: 22px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #490E84;
+    transition: 0.3s ease-in;
+    color: #FFFFFF;
+    font-family: 'inter';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+/* Изменение цвета при наведении */
+.intro_button:hover {
+    background-color: #FFFFFF;
+    color: #490E84; 
+}
+
+.tel_icon {
+    display: none; /* Скрываем иконку телефона */
+}
+
+.burger_menu,
+.burger_icon {
+    display: none; /* Скрываем иконку бургер-меню */
+}
+
+/* Стили для "ЧТО НОВОГО" */
+.new {
+    padding-top: 46px; /* Добавляем отступ сверху */
+}
+
+/* Якоря для навигации */
+#id_header,
+#id_new,
+#id_color,
+#id_form {
+    position: relative;
+    top: -150px;
+    visibility: hidden; /* Скрываем элементы */
+    opacity: 0;
+    z-index: -5;
+}
+
+#id_form {
+    top: -94px;
+}
+
+.new_content {
+    margin-top: 58px;
+}
+
+.text_box_img {
+    display: grid;
+    grid-template-columns: 560px 250px;
+    grid-template-rows: 356px auto;
+    margin-top: 36px;
+    gap: 233px;
+}
+
+.new_title {
+    display: grid;
+    justify-content: center;
+    color: #717171;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.text_box {
+    max-width: 560px;
+}
+
+.p_text {
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 130%;
+}
+
+.b_text {
+    font-size: 20px;
+    line-height: 130%;
+}
+
+.new_img {
+    background-image: url(/img/new.jpeg); /* Устанавливаем изображение заднего фона */
+    width: 100%;
+    height: 100vh;
+    margin-top: 85px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Стили для раздела "ВЫБЕРИ СВОЙ ЦВЕТ" */
+
+.color_title {
+    display: grid;
+    justify-content: center;
+    color: #717171;
+    font-size: 32px;
+}
+
+.color_list {
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+    justify-content: space-between;
+    margin-top: 52px;
+    padding: 0;
+}
+
+.img_box {
+    width: 240px;
+    height: 320px;
+}
+
+.img {
+    position: relative;
+    width: 240px;
+    height: 320px;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0px 3px 8px 0 #000;
+    border: 1px solid;
+    border-radius: 30px;
+}
+
+.img::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 143px;
+    height: 176px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 20px;
+}
+
+/* Задаем изображения для элементов списка цветов */
+.silver_img::before {
+    background-image: url(/img/silver.png);
+}
+
+.purple_img::before {
+    background-image: url(/img/purple.png);
+}
+
+.gold_img::before {
+    background-image: url(/img/gold.png);
+}
+
+.black_img::before {
+    background-image: url(/img/black.png);
+}
+
+.img_title,
+.p_img {
+    display: grid;
+    justify-content: center;
+    margin: 0;
+}
+
+.img_title {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.p_img {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Стили для формы */
+
+.form_content {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 600px 600px;
+}
+
+.form_section {
+    background-color: transparent;
+    margin-top: 204px;
+}
+
+.form {
+    max-width: 413px;
+    background-color: #574B63;
+    padding: 110px 94px;
+}
+
+.form_title {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 72px;
+    color: #FFFFFF;
+    font-size: 31px;
+}
+
+.form_group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.form_input {
+    background-color: transparent;
+    width: 92%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #F5F5F5;
+    outline: none;
+}
+
+.form_label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in;
+    color: #ffffff20; /* Прозрачный цвет текста */
+    font-family: 'inter';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.form_input:focus ~ .form_label,
+.form_input:not(:placeholder-shown) ~ .form_label {
+    top: -18px;
+    font-size: 10px;
+}
+
+.p_form {
+    color: #ffffff20; /* Прозрачный цвет текста */
+    max-width: 369px;
+    font-size: 14px;
+}
+
+.button_box {
+    display: grid;
+    justify-content: center;
+}
+
+.p_form_box {
+    display: grid;
+    justify-content: center;
+}
+
+.button_form {
+    padding: 16px 86px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    background-color: #FFFFFF;
+    color: #490E84;
+    font-size: 14px;
+}
+
+/* Изменение цвета при наведении */ 
+.button_form:hover {
+    transition: 0.3s ease-in;
+    color: #FFFFFF; 
+    background-color: #490E84;
+}
+
+.form_img {
+    background-image: url(/img/form_img.jpeg);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Стили для футера */
+
+.footer {
+    background-color: #0A0A0A; /* Цвет фона */
+}
+
+.footer_content {
+    display: grid;
+    grid-template-columns: 218px 40px 235px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0; /* Добавляем отступы */
+}
+
+.p_footer {
+    color: #717171;
+    font-size: 14px;
+}

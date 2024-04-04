@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <!-- Предварительная загрузка шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_content">
+                <!-- Навигационное меню -->
+                <nav class="navbar">
+                    <!-- Чекбокс для бургер-меню -->
+                    <input class="burger_menu" type="checkbox" name="burger" id="burger">
+                    <div class="menu">
+                        <ul class="menu_item">
+                            <!-- Ссылки на разделы с якорями -->
+                            <li class="list_item">
+                                <a href="#id_new" class="link_item">Что нового</a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#id_color" class="link_item">Цвет</a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#id_form" class="link_item">Заказать</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Логотип с якорем на верх страницы -->
+                    <div class="logo_box logo_header">
+                        <a href="#id_header" class="logo_link link_header">
+                            <img src="/img/apple.svg" alt="Apple" class="logo">
+                        </a>
+                    </div>
+                    <!-- Номер телефона -->
+                    <a href="tel:+38 050-456-56-56" class="number">+38 050-456-56-56</a>
+                    <!-- Иконка телефона -->
+                    <div class="tel_icon">
+                        <a href="tel:+38 050-456-56-56" class="icon_link">
+                            <svg class="tel_svg"  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.1668 12.3797C15.4951 12.2352 14.9637 12.5471 14.4932 12.8194C14.0114 13.1001 13.0951 13.8434 12.57 13.6531C9.88108 12.546 7.35213 10.1925 6.25739 7.49286C6.06444 6.95647 6.80424 6.0344 7.08283 5.54686C7.35316 5.07492 7.65858 4.53852 7.51928 3.86178C7.3934 3.25366 5.76522 1.18188 5.18947 0.615332C4.80977 0.241101 4.42078 0.0352739 4.02147 0.00200893C2.5202 -0.0624419 0.843516 1.94073 0.549452 2.41996C-0.187255 3.44181 -0.183128 4.80152 0.561834 6.45021C2.35717 10.8786 9.14747 17.5618 13.5925 19.4246C14.4128 19.8082 15.1629 20.0005 15.8366 20.0005C16.496 20.0005 17.0831 19.8165 17.5876 19.4516C17.9684 19.2323 20.0536 17.4724 19.9989 15.9307C19.9659 15.5378 19.7606 15.1448 19.3912 14.7644C18.8289 14.1833 16.7704 12.5065 16.1668 12.3797Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- Иконка бургер-меню -->
+                    <label for="burger" class="burger_icon">
+                        <div class="burger_box">
+                            <span class="burger_line line_1"></span>
+                            <span class="burger_line line_2"></span>
+                            <span class="burger_line line_3"></span>
+                        </div>
+                    </label>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <!-- Секция с приветствием -->
+        <section class="intro">
+            <!-- Якорь на верх страницы -->
+            <div id="id_header">!</div>
+            <div class="container">
+                <div class="intro_content">
+                    <h1 class="intro_title">IPHONE 14 PRO</h1>
+                    <!-- Изображение -->
+                    <div class="intro_img"></div>
+                    <!-- Кнопка выбора -->
+                    <div class="button_box">
+                        <button class="intro_button">ВЫБРАТЬ</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Секция с информацией о новинках -->
+        <section class="new">
+            <!-- Якорь на раздел с информацией о новинках -->
+            <div id="id_new">!</div>
+            <div class="container">
+                <div class="new_content">
+                    <h2 class="new_title">ЧТО НОВОГО</h2>
+                    <div class="text_box_img">
+                        <div class="text_box">
+                            <p class="p_text">
+                                Все модели оснащены однокристальной системой A16 Bionic, 
+                                48-мегапиксельной основной
+                                камерой и экранами ProMotion с защитой 
+                                Ceramic Shield и частотным диапазоном 1 — 120 Гц, а также ускоренной памятью LPDDR5. 
+                                Дизайн линейки обновлен, на фронтальной панели смартфонов два выреза. 
+                            </p>
+                            <p class="p_text">
+                                Все iPhone 14 в США будут продаваться без лотка для SIM-карт: 
+                                производитель заявляет, что улучшенная технология eSIM позволит 
+                                перенести старые электронные сим-карты на новые смартфоны. 
+                            </p>
+                            <p class="p_text">
+                                Обновлены фронтальная камера (она снабжена автофокусом и быстрее 
+                                распознает пользователя в условиях недостаточной освещенности) 
+                                и сенсор основной камеры. 
+                            </p>
+                            <b class="b_text">iPhone 14 Pro вышел в новом дизайне — без фирменной 
+                                «челки». Также в ассортименте появился новый цвет. 
+                                В смартфоне, в отличие от «обычных» 14-х айфонов, 
+                                установлен процессор A16 Bionic, который может за 
+                                секунду производить 4 трлн операций с фото.</b>
+                        </div>
+                        <!-- Изображение -->
+                        <div class="new_img"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Секция с выбором цвета -->
+        <section class="color">
+            <div class="container">
+                <!-- Якорь на раздел с выбором цвета -->
+                <div id="id_color">!</div>
+                <div class="color_content">
+                    <h2 class="color_title">ВЫБЕРИ СВОЙ ЦВЕТ</h2>
+                    <div class="color_list_box">
+                        <ul class="color_list">
+                            <!-- Элементы списка с цветами -->
+                            <li class="color_item">
+                                <div class="img_block">
+                                    <div class="img silver_img"></div>
+                                    <h4 class="img_title">Silver</h4>
+                                    <p class="p_img">Серебристый</p>
+                                </div>
+                            </li>
+                            <li class="color_item">
+                                <div class="img_box">
+                                    <div class="img purple_img"></div>
+                                    <h4 class="img_title">Deep purple</h4>
+                                    <p class="p_img">Темно фиолетовый</p>
+                                </div>
+                            </li>
+                            <li class="color_item">
+                                <div class="img_box">
+                                    <div class="img gold_img"></div>
+                                    <h4 class="img_title">Gold</h4>
+                                    <p class="p_img">Золотой</p>
+                                </div>
+                            </li>
+                            <li class="color_item">
+                                <div class="img_box">
+                                    <div class="img black_img"></div>
+                                    <h4 class="img_title">Space Black</h4>
+                                    <p class="p_img">Космический черный</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Секция с формой заказа -->
+        <section class="form_section">
+            <div class="container form_container">
+                <!-- Якорь на раздел с формой заказа -->
+                <div id="id_form">!</div>
+                <div class="form_content">
+                    <!-- Форма заказа -->
+                    <form action="#" class="form">
+                        <h2 class="form_title">ХОЧЕШЬ IPHONE 14 PRO?</h2>
+                        <!-- Поля для ввода данных -->
+                        <div class="form_group">
+                            <input type="text" name="name" id="name" class="form_input" placeholder=" " required>
+                            <label for="name" class="form_label">Ваше имя</label>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" name="text" id="name" class="form_input" placeholder=" " required>
+                            <label for="name" class="form_label">Номер телефона</label>
+                        </div>
+                        <!-- Дополнительный текст -->
+                        <div class="p_form_box">
+                            <p class="p_form">
+                                В ближайшее время наш менеджер свяжется с Вами
+                            </p>
+                        </div>
+                        <!-- Кнопка для отправки формы -->
+                        <div class="button_box">
+                            <button type="submit" class="button_form">ЗАКАЗАТЬ</button>
+                        </div>
+                    </form>
+                    <!-- Изображение -->
+                    <div class="form_img"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_content">
+                <!-- Ссылка на политику конфиденциальности -->
+                <p class="p_footer">
+                    Политика конфиденциальности
+                </p>
+                <!-- Логотип с якорем на верх страницы -->
+                <div class="logo_box">
+                    <a href="#id_header" class="logo_link">
+                        <img src="/img/apple.svg" alt="Apple" class="logo">
+                    </a>
+                </div>
+                <!-- Номер телефона -->
+                <a href="tel:+38 050-456-56-56" class="number number_footer">+38 050-456-56-56</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
